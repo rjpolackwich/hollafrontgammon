@@ -76,3 +76,5 @@ const Register = ({ socket }) => {
 		</div>
 	);
 };
+
+export default Register;
