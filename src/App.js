@@ -1,12 +1,17 @@
 import React, { Component } from 'react';
 import { BrowserRouter, Routes, Route } from "react-router-dom";
-import { LoginForm } from './Login';
-import { OnlinePLayers } from './Lobby';
+import { Login } from './components/Login';
+import { Register } from './components/Register';
+import { Lobby } from './components/Lobby';
+//👇🏻 React Toastify configuration
+import { ToastContainer } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
+//👇🏻 Websockets configuration
 import { io } from "socket.io-client";
 
 
 const App = () => {
-	const socket = io.connect("http://localhost:4000");
+	const socket = io.connect("http://127.0.0.1:4000");
 
 	return (
 		<> 
