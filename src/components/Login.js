@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 import { useNavigate } from "react-router-dom";
 import { toast } from "react-toastify";
 
-export const Login = ({ socket })  => {
+const Login = ({ socket })  => {
     const navigate = useNavigate();
     const [username, setUsername] = useState("");
     const [password, setPassword] = useState("");
@@ -65,3 +65,5 @@ export const Login = ({ socket })  => {
         </div>
     );
 };
+
+export default Login;
